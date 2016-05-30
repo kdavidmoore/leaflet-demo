@@ -1,5 +1,17 @@
 @import "vars";
 
+.side-panel {
+	width: 20vw;
+	overflow: hidden;
+}
+
+.views {
+	width: 80vw;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 #test-map {
-	height: 80vh;	
+	height: 100vh;
 }

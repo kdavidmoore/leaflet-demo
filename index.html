@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="leafletDemo">
 <head>
 	<meta charset="utf-8">
 	<title>Leaflet.js Demo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="assets/libs/angular-ui-router.min.js"></script>
 	<script src="assets/js/mapboxApi.js"></script>
+	<script src="app/leafletDemo.module.js" defer></script>
+	<script src="app/components/map/mapController.js" defer></script>
 </head>
 <body>
-    
-	<div id="test-map"></div>
+	<div class="side-panel">
+		<h4>Providence Canyon State Park</h4>
+		<p>near Lumpkin, GA</p>
 
-	<h1>Providence Canyon State Park</h1>
-	<h5>near Lumpkin, GA</h5>
-	
-	<script src="assets/js/map.js" defer></script>
+		<h5><a ui-sref="home">Home</a></h5>
+		<h5><a ui-sref="map">Map</a></h5>
+	</div>
+
+	<div class="views" ui-view></div>
 </body>
 </html>
