@@ -1,4 +1,18 @@
 /* line 3, ../libs/compass/sass/styles.scss */
+.side-panel {
+  width: 20vw;
+  overflow: hidden;
+}
+
+/* line 8, ../libs/compass/sass/styles.scss */
+.views {
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 15, ../libs/compass/sass/styles.scss */
 #test-map {
-  height: 80vh;
+  height: 100vh;
 }
