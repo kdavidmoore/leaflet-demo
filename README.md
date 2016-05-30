@@ -3,7 +3,7 @@
 Demo of leaflet.js
 
 ### Note:
-You will need a public access token from Mapbox to use this app. Store your access token in mapboxApi.js like so:
+You will need a public access token from Mapbox to use this app. Store your access token under assets/js/mapboxApi.js like so:
 ```javascript
 const pubAccessToken = 'myPublicAccessTokenString';
 ```
